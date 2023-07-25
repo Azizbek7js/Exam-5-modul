@@ -1,0 +1,67 @@
+:root{
+    --green : #07e737;
+    --yellov :#f5ba43;
+    --blue : #3d8eff;
+    --dark : #333333;
+    --light: #FFF;
+
+    --middle-dark:#454545;
+    --light-drak :#636262;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #333333;  
+    margin-top: 100px;  
+    
+    color: var(--light);
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+.board{
+    width: 200px;
+    height: max-content;
+    background: var(--middle-dark);
+    
+}
+.header-todo{
+    background: var(--blue);
+    padding: 0.3rem;
+}
+.header-progress{
+    background:var(--yellov) ;
+    padding: 0.3rem;
+}
+.header-done{
+    background:var(--green) ;
+    padding: 0.3rem;
+}
+
+.card{
+    height: 60px;
+    margin: 0.6rem;
+    background: var(--light-drak) ;
+    padding: 0.3rem;
+}
+.btn{
+    margin-left: 50px;
+    margin-bottom: 1rem;
+    width: 90px;
+    height: 30px;
+    background: var(--green);
+    border: none;
+    border-radius: 15px;
+    color: var(--light);
+}
