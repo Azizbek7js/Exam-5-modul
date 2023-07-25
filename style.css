@@ -27,18 +27,22 @@ body{
 
 .container{
     display: flex;
-    align-items: center;
     gap: 50px;
+    height: max-content;
 }
 .board{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     width: 200px;
-    height: max-content;
+    height: 100%;
     background: var(--middle-dark);
     
 }
 .header-todo{
     background: var(--blue);
     padding: 0.3rem;
+   
 }
 .header-progress{
     background:var(--yellov) ;
@@ -58,10 +62,26 @@ body{
 .btn{
     margin-left: 50px;
     margin-bottom: 1rem;
+    margin-top: 1rem;
     width: 90px;
     height: 30px;
     background: var(--green);
     border: none;
     border-radius: 15px;
     color: var(--light);
+}
+.todo-board{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.progress-board{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.done-board{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
 }
